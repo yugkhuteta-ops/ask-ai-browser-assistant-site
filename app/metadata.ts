@@ -1,16 +1,13 @@
 import type { Metadata } from "next";
 
 export const siteConfig = {
-    // Replace before publishing
     url: "https://example.com",
     title: "Ask AI Browser Assistant",
-    description:
-        "Turn selected text into an AI conversation instantly. Floating action button, right‑click menu, multi‑AI support, and a privacy-friendly workflow.",
-    // Replace before publishing
+    description: "Turn selected text into an AI conversation instantly. Multi-AI support with privacy-first design.",
     githubUrl: "https://github.com/",
-    privacyUrl: "/privacy",
-    supportUrl: "/support",
-    contactUrl: "/contact",
+    linkedinUrl: "https://www.linkedin.com/in/yug-khunteta-354854374/details/experience/",
+    // Replace this with your actual install link
+    installUrl: "https://example.com/install",
 };
 
 export const metadata: Metadata = {
@@ -24,13 +21,6 @@ export const metadata: Metadata = {
     robots: {
         index: true,
         follow: true,
-        googleBot: {
-            index: true,
-            follow: true,
-        },
-    },
-    alternates: {
-        canonical: "/",
     },
     openGraph: {
         type: "website",
@@ -38,7 +28,6 @@ export const metadata: Metadata = {
         title: siteConfig.title,
         description: siteConfig.description,
         siteName: siteConfig.title,
-        locale: "en_US",
     },
     twitter: {
         card: "summary_large_image",
@@ -46,4 +35,3 @@ export const metadata: Metadata = {
         description: siteConfig.description,
     },
 };
-
